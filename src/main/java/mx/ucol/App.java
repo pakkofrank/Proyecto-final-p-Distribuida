@@ -20,7 +20,7 @@ public class App {
         // Create the ToDos table if not exists
         Connection connection = DBConnection.getInstance();
         String sql = "CREATE TABLE IF NOT EXISTS todos (" + "id integer PRIMARY KEY," + "title text NOT NULL,"
-                + "completed integer NOT NULL);";
+            + "completed integer NOT NULL);";
 
         try {
             Statement statement = connection.createStatement();

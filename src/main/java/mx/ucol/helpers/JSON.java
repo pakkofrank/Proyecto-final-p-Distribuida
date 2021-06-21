@@ -8,6 +8,7 @@ import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import mx.ucol.models.Todo;
+import mx.ucol.models.Todos;
 
 public class JSON {
     public static Todo jsonToObject(String jsonString) throws JsonParseException, JsonMappingException, IOException {
@@ -18,6 +19,13 @@ public class JSON {
     }
 
     public static String objectToJson(Todo todo) throws JsonGenerationException, JsonMappingException, IOException {
+        ObjectMapper mapper = new ObjectMapper();
+        String json = mapper.writeValueAsString(todo);
+
+        return json;
+    }
+
+    public static String objectToJson(Todos todo) throws JsonGenerationException, JsonMappingException, IOException {
         ObjectMapper mapper = new ObjectMapper();
         String json = mapper.writeValueAsString(todo);
 
