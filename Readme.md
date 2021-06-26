@@ -1,4 +1,4 @@
-Proyecto Hecho por: Jose Frncisco Palma Sanchez.
+Proyecto Hecho por: Jose Francisco Palma Sanchez.
 
 Este proyecto se trata de una API Rest elaborada en java, es para administrar la conexiones y las bases de datos usando HTTServer y SQLiIte.
 
